@@ -184,7 +184,7 @@ _get_utf8_text(const id3_ucs4_t* native_text)
 static void
 vc_scan(struct song_metadata *psong, const char *comment, const size_t length)
 {
-	char strbuf[1024];
+	char strbuf[10240];
 
 	if(length > (sizeof(strbuf) - 1))
 	{
